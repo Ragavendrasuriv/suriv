@@ -1,0 +1,12 @@
+k = input("please enter a string:")
+dic = dict()
+def most_frequent(x):
+     for i in range(0,len(x)):
+         if x[i] not in dic:
+             dic[x[i]] = 1
+         else:
+             dic[x[i]] = dic.get(x[i])+1
+most_frequent(k)
+dicsort = sorted(dic,key = dic.get,reverse = True)
+for i in dicsort:
+    print(i.lower(),"=0",dic[i])
