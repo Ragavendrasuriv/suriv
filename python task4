@@ -1,0 +1,13 @@
+a = [12,-7,5,64,-14]
+n=len(a)
+for i in range(0,n):
+   if a[i]>=0:
+     print(a[i],end = ",")
+    
+x = [12,14,-95,3]
+b = []
+n = len(x)
+for i in range(0,n):
+   if x[i]>=0:
+      b.append(x[i])
+print(b)
